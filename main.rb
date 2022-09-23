@@ -1,5 +1,17 @@
+#######################################
+# This program allows the user to     #
+# add, subtract, multiply, or divide  #
+# any two integer numbers. It will    #
+# not however, allow the user to do   #
+# anything outside the bounds of      #
+# regular math. Sorry.                #
+#                                     #
+#   by Ross Voerman                   #
+#######################################
+
 # frozen_string_literal: true
 
+# define our functions here
 def add(num1, num2)
   puts num1.to_f + num2.to_f
 end
@@ -28,8 +40,10 @@ def check_input(str)
   false
 end
 
+# and our input variable
 str = ''
 
+# check user input and perform commands
 while str != 'quit'
   print 'SuperMathyBot> '
   str = gets
