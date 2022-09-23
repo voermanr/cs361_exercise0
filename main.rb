@@ -1,7 +1,23 @@
 # frozen_string_literal: true
 
 def add(num1, num2)
-  num1 + num2
+  puts num1.to_f + num2.to_f
+end
+
+def sub(num1, num2)
+  puts num1.to_f - num2.to_f
+end
+
+def mul(num1, num2)
+  puts num1.to_f * num2.to_f
+end
+
+def div(num1, num2)
+  if num2.to_i != 0
+    puts num1.to_f / num2.to_f
+  else
+    puts 'Can\'t divide by zero'
+  end
 end
 
 def check_input(str)
@@ -21,7 +37,7 @@ while str != 'quit'
 
   str = str.chop
   cmds_arr = str.split
-  puts cmds_arr
+
   case cmds_arr[0]
   when 'add'
     add(cmds_arr[1], cmds_arr[2])
